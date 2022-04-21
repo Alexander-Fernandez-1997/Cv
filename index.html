@@ -4,20 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Cv Alexander Ferández</title>
   </head>
   <body>
-    <style>
-      embed {
-        height: 100vh;
-        width: 100%;
-      }
-    </style>
-    <embed
-      src="/Alexander_Fernandez_cv.pdf"
-      type="application/pdf"
-      width="100%"
-      height="100%"
-    />
+    <div class="lenguage">
+      <h1>Welcome , please select a lenguage:</h1>
+      <span>
+        <div id="container">
+          <div class="inner-container">
+            <div class="toggle">
+              <p>Español</p>
+            </div>
+            <div class="toggle">
+              <p>English</p>
+            </div>
+          </div>
+          <div class="inner-container" id="toggle-container">
+            <div class="toggle">
+              <p>Español</p>
+            </div>
+            <div class="toggle">
+              <p>English</p>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+    <br />
+    <div id="eng">
+      <embed
+        src="/Alexander_Fernandez_eng_cv.pdf"
+        type="application/pdf"
+        width="100%"
+        height="100%"
+      />
+    </div>
+    <div id="esp">
+      <embed
+        src="/Alexander_Fernandez_esp_cv.pdf"
+        type="application/pdf"
+        width="100%"
+        height="100%"
+      />
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
